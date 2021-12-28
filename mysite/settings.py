@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure--imda-jgi-wmnrtu(66&0y-c$u6hno4oa1kcc)9$(3+ur97_wm
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['192.168.56.101','localhost']
+ALLOWED_HOSTS = ['192.168.56.101','localhost', '127.0.0.1']
 
 
 # Application definition
