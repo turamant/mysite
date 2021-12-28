@@ -1,14 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Vote List</title>
-</head>
-<body>
+{% extends 'polls/base.html' %}
+
+{% block content %}
 <h2>Vote list</h2>
 {% for vote in votes %}
     <p>{{ vote.title }}
-        {{ vote.date }}</p>
+        {{ vote.date }}
+
+        Картинка: <img src="{{ vote.poster.url }}" width="150">
+
+    </p>
 {% endfor %}
-</body>
-</html>
+{% endblock %}
