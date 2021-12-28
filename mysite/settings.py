@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure--imda-jgi-wmnrtu(66&0y-c$u6hno4oa1kcc)9$(3+ur97_wm
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['192.168.56.101','localhost']
 
 
 # Application definition
@@ -83,7 +83,7 @@ DATABASES = {
         'USER': 'mysite_user',
         'PASSWORD': 'parol',
         'HOST': 'localhost',
-        'PORT': 5432,
+        'PORT': '',
     }
 }
 
@@ -123,7 +123,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.0/howto/static-files/
 
 STATIC_URL = 'static/'
-
+STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
