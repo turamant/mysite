@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vote List</title>
+</head>
+<body>
+<h2>Vote list</h2>
+{% for vote in votes %}
+    <p>{{ vote.title }}
+        {{ vote.date }}</p>
+{% endfor %}
+</body>
+</html>
